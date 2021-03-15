@@ -15,7 +15,7 @@ qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
-win32:CONFIG(release, debug|release): LIBS += -L'C:/Program Files (x86)/IntelSWTools/system_studio_2020/OpenCL/sdk/lib/x64/' -lOpenCL
+win32:CONFIG(release, debug|release): LIBS += -L'C:/Program Files (x86)/IntelSWTools/system_studio_2020/OpenCL/sdk/lib/x32/' -lOpenCL
 else:win32:CONFIG(debug, debug|release): LIBS += -L'C:/Program Files (x86)/IntelSWTools/system_studio_2020/OpenCL/sdk/lib/x64/' -lOpenCL
 else:unix: LIBS += -L'C:/Program Files (x86)/IntelSWTools/system_studio_2020/OpenCL/sdk/lib/x64/' -lOpenCL
 
